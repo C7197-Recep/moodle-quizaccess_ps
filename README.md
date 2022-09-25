@@ -1,4 +1,4 @@
-PROCTORSTONE MOODLE PLUGIN
+#PROCTORSTONE MOODLE PLUGIN
 
 ProctorStone Plugin provides recorded proctoring for tests taken through Moodle. ProctorStone is a fully integrated, role-based, secure, and ai supported proctoring. It is installation-free, and teacher/student friendly. ProctorStone provides Onboarding with ID Verification, BrowserLock (no-installation), PhotoCapture, Webcam Recording, Screen Recording, and AI proctoring features. Even though it is an online installation-free solution, it can detect sophisticated cheating methods like Virutal Machine, Second Monitor Usage, Monitor Mirroring, and much more.
 
@@ -7,18 +7,22 @@ This plugin is available only for ProctorStone subscribed customers.
 To find out more about the integration procedure, learn about features, try a demo, or subscribe; check the link below:
 https://proctorstone.com
 
+For an instant demo, see the link below : 
+https://demo.proctorstone.com/
+
 For any questions, contact us at: info@proctorstone.com
 
-REQUIREMENTS
+##REQUIREMENTS
 
-1. ProctorStone requires no installation other than the moodle plugin.
-2. The plugin was tested with Moodle versions from 3.7 to 4.04.
+1. ProctorStone requires no installation.
+2. ProctorStone can be used with any webpage, LMS, or system via api calls. This plugin is created for providing end-users with instant Moodle integration.
+3. The plugin was tested with Moodle versions from 3.7 to 4.04.
 
-INSTALLATION AND INTEGRATION
+##INSTALLATION AND INTEGRATION
 
 1. Subscribe to ProctorStone via info@proctorstone.com or the website and get an App Key-App Secret pair.
 2. Download plugin ZIP file from one of the links below,
-hhttps://github.com/ProctorStone/moodle-quizaccess_ps
+https://github.com/ProctorStone/moodle-quizaccess_ps
 https://moodle.org/plugins/quizaccess_ps
 3. Login to your Moodle site as an admin,
 4. Open `Site administration → Plugins → Install plugins`, upload the ZIP file and install it.
@@ -26,7 +30,7 @@ https://moodle.org/plugins/quizaccess_ps
 
 That is all, ProctorStone is now completely integrated with your moodle, and ready to be used by your institution's teachers and students.
 
-USAGE BY TEACHERS
+##USAGE BY TEACHERS
 
 ### Access Control
 
@@ -61,7 +65,7 @@ In sum, who does not have authorization to modify and see the results of an exam
 2. Skim through the reports of the students.
 3. Click "Report" button to see the detailed report of a student.
 
-USAGE BY STUDENTS
+##USAGE BY STUDENTS
 
 1.  ProctorStone is installation-free solution. There is no need for students to install anything.
 2.  ProctorStone is a One-Login-For-All solution. It does not require any kind of registration or login. Needed information related to students gets collected over Moodle automatically over Secure Proctoring API.
@@ -75,7 +79,7 @@ USAGE BY STUDENTS
 
 Student's face gets checked via webcam against his/her profile photograph. The ID Check can be done against the student's ID card if your institution prefers to do so, as well.
 
-PERSONAL INFORMATION
+##PERSONAL INFORMATION
 
 ProctorStone does not collect any sensitive data in terms of GDPR classification. Besides, institutions do not need us to collect ID Card photographs most of the time, since ProctorStone utilizes profile photographs for ID Verification. The data collected is deleted within 15 days after an exam if the institution does not require otherwise.
 
@@ -94,7 +98,7 @@ Based on the client institution's requirements, ProctorStone collects one or mor
 3. Screen Recordings
 4. Device Information/ IP Adress
 
-LANGUAGE SUPPORT
+##LANGUAGE SUPPORT
 
 ProctorStone currently supports English and Turkish languages. The user can simply change the language by changing the language of Moodle.
 
