@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/quiz/accessrule/ps/db" VERSION="2020091023" COMMENT="XMLDB file for Moodle mod/quiz/accessrule/ps"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="quizaccess_ps" COMMENT="Stores all the settings for this accessrule">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="quizid"/>
+        <FIELD NAME="quizid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="Foreign key related to quiz.id." PREVIOUS="id" NEXT="proctoringrequired"/>
+        <FIELD NAME="proctoringrequired" TYPE="int" LENGTH="5" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" COMMENT="If 1 then the quiz require identity validation." PREVIOUS="quizid"/>
+        <FIELD NAME="app_key" TYPE="text" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="app_secret" TYPE="text" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="quizid"/>
+        <KEY NAME="quizid" TYPE="foreign-unique" FIELDS="quizid" REFTABLE="quiz" REFFIELDS="id" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
