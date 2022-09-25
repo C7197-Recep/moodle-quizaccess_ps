@@ -7,17 +7,19 @@ This plugin is available only for ProctorStone subscribed customers.
 To find out more about the integration procedure, learn about features, try a demo, or subscribe; check the link below:
 https://proctorstone.com
 
-For any questions, contact us at: info@proctorstone.com 
+For any questions, contact us at: info@proctorstone.com
 
 REQUIREMENTS
 
-1. ProctorStone requires no installation other than the moodle plugin. 
-2. The plugin was tested with Moodle versions from 3.7 to 4.04. 
+1. ProctorStone requires no installation other than the moodle plugin.
+2. The plugin was tested with Moodle versions from 3.7 to 4.04.
 
 INSTALLATION AND INTEGRATION
 
 1. Subscribe to ProctorStone via info@proctorstone.com or the website and get an App Key-App Secret pair.
-2. Download plugin ZIP file, 
+2. Download plugin ZIP file from one of the links below,
+hhttps://github.com/ProctorStone/moodle-quizaccess_ps
+https://moodle.org/plugins/quizaccess_ps
 3. Login to your Moodle site as an admin,
 4. Open `Site administration → Plugins → Install plugins`, upload the ZIP file and install it.
 5. Set "App Key" and "App Secret" when required.
@@ -28,10 +30,10 @@ USAGE BY TEACHERS
 
 ### Access Control
 
-ProctorStone is a FULLY INTEGRATED ROLE BASED proctoring solution. What that means is: 
+ProctorStone is a FULLY INTEGRATED ROLE BASED proctoring solution. What that means is:
 
 1.  Authorization/Access permission of a user is inherited to ProctorStone from his/her role on Moodle automatically.
-2.  Only who has a role like Admin or Teacher entitled for reaching settings of an exam can set or change settings of ProctorStone for that exam. 
+2.  Only who has a role like Admin or Teacher entitled for reaching settings of an exam can set or change settings of ProctorStone for that exam.
 3.  A user like Teacher can only reach ProctorStone dashboard of an exam only if he/she has the needed authorization over that exam.
 
 In sum, who does not have authorization to modify and see the results of an exam can not reach the ProctorStone dashboard of that exam.
@@ -45,13 +47,13 @@ In sum, who does not have authorization to modify and see the results of an exam
 5. Set a "Meeting Url" if you want to monitor your students over Google Meets, Zoom, etc. at the same time.
 6. Provide other settings as you need.
 7. Choose status as "Enabled" from the dropbox over the "Update" button.
-8. Click the "Update" button. 
+8. Click the "Update" button.
 
 ### How to Deactivate ProctorStone For An Exam:
 
 1. Go to `Your Exam->ProctorStone->Settings`.
 2. Choose status as "Disabled" or "Terminated" from the dropbox over the "Update" button.
-3. Click the "Update" button. 
+3. Click the "Update" button.
 
 ### How to See The Proctoring Reports Of An Exam:
 
@@ -79,14 +81,18 @@ ProctorStone does not collect any sensitive data in terms of GDPR classification
 
 Secure token and standard encryption methods are used for all information exchange.
 
-ProctorStone collects the following information related to students from Moodle during an exam :
+ProctorStone collects the following information related to students from Moodle during an exam via this plugin :
 
 1.  Name/Surname
 2.  Email
-3.  Profile Photograph (Or Photo of ID Card if the institution requires)
-4.  Webcam Recordings
-5.  Screen Recordings
-6.  Device Information/ IP Adress
+3.  Profile Photograph 
+
+Based on the client institution's requirements, ProctorStone collects one or more of the following information over its own interfaces during an exam :
+
+1. Photo of ID Card (instead of Profile Photograph if required)
+2. Webcam Recordings/ Photographs from Webcam
+3. Screen Recordings
+4. Device Information/ IP Adress
 
 LANGUAGE SUPPORT
 
